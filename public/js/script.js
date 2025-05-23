@@ -24,7 +24,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution:
 
 socket.on("r-location", function (data) {
     const { id, latitude, longitude } = data;
-         map.setView([latitude,longitude],13);
+         map.setView([latitude,longitude],20);
 
     if (markers[id]) {
         markers[id].setLatLng([latitude, longitude]);
